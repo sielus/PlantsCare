@@ -1,4 +1,4 @@
-package devsdream.plantscare.ui.notifications;
+package devsdream.plantscare.ui.rooms;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,17 +14,17 @@ import androidx.lifecycle.ViewModelProvider;
 
 import devsdream.plantscare.R;
 
-public class NotificationsFragment extends Fragment {
+public class RoomsFragment extends Fragment {
 
-    private NotificationsViewModel notificationsViewModel;
+    private RoomsViewModel roomsViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        notificationsViewModel =
-                new ViewModelProvider(this).get(NotificationsViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_notifications, container, false);
+        roomsViewModel =
+                new ViewModelProvider(this).get(RoomsViewModel.class);
+        View root = inflater.inflate(R.layout.fragment_rooms, container, false);
         final TextView textView = root.findViewById(R.id.text_notifications);
-        notificationsViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
+        roomsViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);

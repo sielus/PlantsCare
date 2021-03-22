@@ -1,16 +1,16 @@
-package devsdream.plantscare.ui.notifications;
+package devsdream.plantscare.ui.plantslist;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class NotificationsViewModel extends ViewModel {
+public class PlantsViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public NotificationsViewModel() {
+    public PlantsViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is notifications fragment");
+        mText.setValue("All plants list");
     }
 
     public LiveData<String> getText() {

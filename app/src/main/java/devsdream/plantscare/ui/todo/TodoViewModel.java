@@ -1,16 +1,16 @@
-package devsdream.plantscare.ui.dashboard;
+package devsdream.plantscare.ui.todo;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class DashboardViewModel extends ViewModel {
+public class TodoViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public DashboardViewModel() {
+    public TodoViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is dashboard fragment");
+        mText.setValue("Todo fragment");
     }
 
     public LiveData<String> getText() {

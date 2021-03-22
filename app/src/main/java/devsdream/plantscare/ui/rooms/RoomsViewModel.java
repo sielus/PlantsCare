@@ -1,16 +1,16 @@
-package devsdream.plantscare.ui.home;
+package devsdream.plantscare.ui.rooms;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class HomeViewModel extends ViewModel {
+public class RoomsViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public HomeViewModel() {
+    public RoomsViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is home fragment");
+        mText.setValue("Rooms fragment");
     }
 
     public LiveData<String> getText() {
